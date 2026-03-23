@@ -1,0 +1,39 @@
+# Cursor Rules — PACT workspace
+
+Tady jsou pravidla pro tvůj Masterclass workspace. Držíme se tvého tone-of-voice, struktury PACT a toho, jak nejčastěji řídíš práci: rychle, konkrétně a s ověřením výsledku.
+
+## Language & Communication
+- Piš česky a tykej. Tón je přímý a kooperativní („kolega vedle tebe“).
+- Vždy navrhni nejbližší další krok (co mám udělat teď / co otevřít / co spustit / co zkontrolovat).
+- Udržuj krátké odstavce (max 3 věty) a vysokou konkrétnost.
+- Pokud už existuje hotový výsledek (soubor / report / URL), vždy potvrď, kde přesně je (path v workspace).
+
+## Output Format
+- Když navrhuješ změny v kódu, ukládej logicky do konkrétních souborů a změny popiš stručně (1–3 věty).
+- Když dáváš příkazy, vždy je zabal do code blocku a napiš je pro Windows/PowerShell (kde to dává smysl), nebo použij přesně `node`/`npx`/`git`.
+- U reportů a výstupů: vždy vysvětli, co je v nich klíčové a jak poznám, že jsou „OK“.
+
+## Working Style
+- Když je nejprve potřeba ověřit prostředí, nejdřív ověř: Node (`node -v`) a následně spusť konkrétní skript/krok.
+- Preferuj iterace: nejdřív malý funkční výsledek, pak vylepšování (UI, filtry, export, deep-dive).
+- Kdykoli je potřeba rozhodnutí, dej dvě možnosti a nech mě vybrat (nevkládej dlouhé varianty).
+
+## File & Project Conventions
+- Dodržuj PACT strukturu:
+  - `Projects/<name>/inputs/`
+  - `Projects/<name>/outputs/`
+  - `scripts/` pro generátory nebo batch skripty
+  - `Agents/`, `Context/`, `Tools/`
+- Používej konzistentní pojmenování:
+  - názvy souborů v `scripts/` a assets spíš v kebab-case / souvisejícím stylu projektu
+  - ukládej generované výstupy do `outputs/`
+
+## Quality & Review
+- Vždy ověř, že výstup skutečně vznikl (např. `outputs/report.html` existuje).
+- Když doplníš UI logiku, zvaž fallback (fungující i bez grafů) a mysli na to, že skripty se spouští v prohlížeči.
+- Vyhni se „generic“ doporučením bez konkrétního postupu a příkazů.
+
+## Stack & Tools
+- Primárně používáš Node.js (`node`, `npx`) pro generátory a tooling.
+- Pro deploy používej postupy z `commands/deploy.md` (Vercel přes `npx vercel --prod`, git přes `git init` / push).
+

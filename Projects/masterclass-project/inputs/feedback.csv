@@ -1,0 +1,13 @@
+id,date,language,rating,comment,channel
+1,2026-03-10,cs,5,"Skvela podpora, vse vyreseno za par minut.",email
+2,2026-03-10,cs,2,"Aplikace pada pri nahravani souboru.",web
+3,2026-03-11,en,4,"Great UX, but missing dark mode.",chat
+4,2026-03-11,cs,3,"Docela dobre, ale onboarding je nejasny.",web
+5,2026-03-11,de,1,"Sehr langsam und unklar.",email
+6,2026-03-12,cs,5,"Rychle, prehledne, super prace.",chat
+7,2026-03-12,en,2,"Billing page is confusing.",web
+8,2026-03-12,cs,4,"Libi se mi nove filtry ve vyhledavani.",email
+9,2026-03-13,cs,1,"Nejde reset hesla.",web
+10,2026-03-13,en,5,"Excellent experience.",chat
+11,2026-03-13,cs,3,"Chybi mi vice prikladu v napovede.",email
+12,2026-03-14,cs,4,"Notifikace uz konecne davaji smysl.",web
